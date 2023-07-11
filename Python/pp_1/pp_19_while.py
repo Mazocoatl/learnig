@@ -1,4 +1,4 @@
-#ciclo while
+#ciclo while (mientras)
 #while condición:
 #    bloque de código
 
