@@ -1,6 +1,16 @@
-user_option = input('piedra, papel o tijera? ')
+import random
+
+options = ('piedra', 'papel', 'tijera')
+print('¡Bienvenido a piedra, papel o tijera!')
+
+user_option = input('¿Qué eliges piedra, papel o tijera? ')
 user_option = user_option.lower()
-pc_option = 'tijera'
+while user_option not in options:
+  print('¡Opción no válida!')
+  user_option = input('¿Qué eliges piedra, papel o tijera? ')
+  user_option = user_option.lower()
+
+pc_option = random.choice(options)
 print('El usuario eligió: ' + user_option)
 print('La pc eligió: ' + pc_option)
 
