@@ -2,7 +2,7 @@ import random
 import os
 l = True
 
-options = ('piedra 🪨', 'papel 🗞️', 'tijera ✂️')
+opciones = ('piedra', 'papel', 'tijera')
 def clear():
     if turnos != 0:
         os.system('pause')
@@ -24,11 +24,12 @@ while l:
         clear()
         print('1.- Piedra 🪨 | 2.- Papel 🗞️ | 3.- Tijera ✂️')
         print(f'Puntuación: | Usuario: {u} | PC: {c} | Empates: {e} | Turnos: {turnos} |')
-        pc_option = random.choice(options)
+        pc_option = random.choice(opciones)
         user = input('Ingresa tu opción: ')
-        if len(user)>0 and user in options or len(user)>0 and int(user) <= len(options) and int(user)>0:
+        user = user.lower()
+        if len(user)>0 and user in opciones or len(user)>0 and int(user) <= len(opciones)and int(user)>0:
             if user.isdigit():
-                user = options[int(user)-1]
+                user=opciones[int(user)-1]
             print(f'PC: {pc_option}  VS Usuario: {user}')
             if pc_option != user:
                 if (pc_option == 'piedra' and user == 'papel') or (pc_option == 'papel' and user == 'tijera') or (pc_option == 'tijera' and user == 'piedra'):
