@@ -8,7 +8,9 @@ CursoGityGitHub/
 *.webp
 Recursos/
 ```
-*.webp
-```
 python/cp2/pkg/__pycache__/
 ```
+*.pyc
+*.pyo
+*.pyd
+*.zip
