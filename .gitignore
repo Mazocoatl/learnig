@@ -10,4 +10,5 @@ Recursos/
 ```
 *.webp
 ```
-__pycache__/
+python/cp2/pkg/__pycache__/
+```
