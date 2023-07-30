@@ -8,3 +8,6 @@ CursoGityGitHub/
 *.webp
 Recursos/
 ```
+*.webp
+```
+__pycache__/
