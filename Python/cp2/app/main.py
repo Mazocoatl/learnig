@@ -13,6 +13,11 @@ def run():
         country = result[0]
         labels, values = utils.get_population(country)
         charts.generate_bar_chart(labels, values)
+        charts.generate_pie_chart(labels, values)
+        charts.generate_line_chart(labels, values)
+
+    else:
+        print('No se encontro el pais')
 
 if __name__ == '__main__':
     run()
